@@ -1,0 +1,74 @@
+h1 {
+	margin-top: 8vh;
+	font-family: Monserrat;
+	font-size: 12vh;
+	padding-left: 15%;
+	line-height: 15vh;
+}
+
+h2 {
+	font-weight: lighter;
+	font-size: 15hvh;
+	color: #BDB76B;
+}
+
+ul, a {
+	list-style: none;
+	font-size: 5hvh;
+	color: #FFFAF0;
+}
+
+body {
+	background-color: #556B2F;
+	line-height: 8vh;
+	color: #FFFAF0;
+	font-family: Monserrat;
+}
+
+.prompt {
+	padding-left: 15%;
+	display: flex;
+	flex-direction: row;
+}
+
+.paran {
+	color: #BDB76B;
+}
+
+.submit {
+	padding-left: 17%;
+	padding-bottom: 10vh;
+}
+
+.result {
+	margin-left:35%;
+}
+
+img {
+	margin-left:35%;
+	width: 35vh;
+	object-fit: cover;
+}
+
+input, button {
+  font-size: 1.7rem;
+}
+
+#title {
+  /* text-shadow: 0px 0px 13px #fff; */
+  transition: all 2s;
+}
+
+.specialTitle {
+  text-decoration: underline;
+  color: #000;
+  text-shadow: 0px 0px 13px #ff0072;
+}
+
+#outputText {
+	font-size: 2rem;
+	color: #FFFAF0;
+	margin-right: 30%;
+	text-align: center;
+	font-weight: bold;
+}
