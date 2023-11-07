@@ -57,9 +57,9 @@ function generate(choice) {
         var randomIndex = Math.floor(Math.random() * cats.length);
         var selectedRandom = cats[randomIndex];
         outputParagraph.innerText = "You need a " + cats[randomIndex] + " cat.";
-        var imageId = cats[randomIndex];
+        var imageId = catPics[randomIndex];
     }
-
+    
     var img = document.getElementById(imageId);
     img.style.display = 'block';
 }
