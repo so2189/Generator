@@ -45,6 +45,7 @@ body {
 }
 
 img {
+	margin-top: 5vh;
 	margin-left:30%;
 	width: 35vh;
 	object-fit: cover;
