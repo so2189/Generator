@@ -31,6 +31,11 @@ function generate(choice) {
     document.getElementById(catPics[4]).style.display = 'none';
     document.getElementById(catPics[5]).style.display = 'none';
 
+    document.getElementById(catPics[6]).style.display = 'none';
+    document.getElementById(catPics[7]).style.display = 'none';
+    document.getElementById(catPics[8]).style.display = 'none';
+    document.getElementById(catPics[9]).style.display = 'none';
+
 
     if (choice == 1) {
       // Easy going: British Shorthair
@@ -57,9 +62,9 @@ function generate(choice) {
         var randomIndex = Math.floor(Math.random() * cats.length);
         var selectedRandom = cats[randomIndex];
         outputParagraph.innerText = "You need a " + cats[randomIndex] + " cat.";
-        var imageId = catPics[randomIndex];
+        var imageId = catPics[randomIndex+1];
     }
-    
+
     var img = document.getElementById(imageId);
     img.style.display = 'block';
 }
