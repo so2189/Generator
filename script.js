@@ -25,37 +25,44 @@ function generate(choice) {
         '9': 'cat9'
     };
 
+    document.getElementById(catPics[1]).style.display = 'none';
+    document.getElementById(catPics[2]).style.display = 'none';
+    document.getElementById(catPics[3]).style.display = 'none';
+    document.getElementById(catPics[4]).style.display = 'none';
+    document.getElementById(catPics[5]).style.display = 'none';
+
+
     if (choice == 1) {
       // Easy going: British Shorthair
       outputParagraph.innerText = "You NEED a British Shorthair cat.";   
-      var selectedImageId = catPics[choice];
+      var imageId = catPics[choice];
     } else if (choice == 2) {
       // Friendly: Maine coon
       outputParagraph.innerText = "You NEED a Maine Coon cat.";   
-      var selectedImageId = catPics[choice];
+      var imageId = catPics[choice];
     } else if (choice == 3) {
       //  Independent: Norwegian Forest cat
        outputParagraph.innerText = "You NEED a Norwegian Forest cat."; 
-       var selectedImageId = catPics[choice];
+       var imageId = catPics[choice];
     }  else if (choice == 4) {
       // Quiet: Persian
         outputParagraph.innerText = "You NEED a Persian cat.";   
-        var selectedImageId = catPics[choice];
+        var imageId = catPics[choice];
     }  else if (choice == 5) {
       // Energetic: Bengal
         outputParagraph.innerText = "You NEED a Bengal cat.";   
-        var selectedImageId = catPics[choice];
+        var imageId = catPics[choice];
     } else {
       // random
         var randomIndex = Math.floor(Math.random() * cats.length);
         var selectedRandom = cats[randomIndex];
         outputParagraph.innerText = "You need a " + cats[randomIndex] + " cat.";
-        var selectedImageId = catPics[randomIndex];
-    }     
-    
-    var selectedImage = document.getElementById(selectedImageId);
-    selectedImage.style.display = 'block';
-} 
+        var imageId = cats[randomIndex];
+    }
+
+    var img = document.getElementById(imageId);
+    img.style.display = 'block';
+}
 
 function restyle() {
   var randR = Math.random() * 255;
